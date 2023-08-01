@@ -1,6 +1,6 @@
 import mongoose, { ConnectOptions } from "mongoose";
 
-const dbURI = 'mongodb://localhost:27017/my_movie_db';
+const dbURI = 'mongodb://localhost:27017/MovieDB';
 
 mongoose.connect(dbURI, {
   useNewUrlParser: true,
