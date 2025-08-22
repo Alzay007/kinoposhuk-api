@@ -1,11 +1,12 @@
 import mongoose, { Document, Schema } from 'mongoose';
+import { IMovie } from './movie';
 
 export interface IUser extends Document {
   username: string;
   email: string;
   password: string;
   avatar?: string;
-  ratedMovies: string[];
+  ratedMovies: IMovie[];
   watchlist: string[];
 }
 
